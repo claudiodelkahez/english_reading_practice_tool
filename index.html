@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ERPT</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header><h1>English reading practice tool</h1></header>
+        <main>
+            <section class="columna-principal">
+                <div class="boton_contenedor">
+                    <button
+                        class="boton__aumentar"
+                        onclick="changeFontSize('increase')"
+                    >
+                        A+
+                    </button>
+                    <button
+                        class="boton__disminuir"
+                        onclick="changeFontSize('decrease')"
+                    >
+                        A-
+                    </button>
+                    <button class="boton__disminuir">O</button>
+                </div>
+
+                <textarea
+                    placeholder="Pegá aca el texto que vas a leer..."
+                    id="textarea"
+                ></textarea>
+            </section>
+            <section class="columna-lateral">
+                <div class="contenedor-palabra-pintada">
+                    <h3>Palabra seleccionada:</h3>
+                    <p class="palabra_pintada" id="palabra_pintada">
+                        Acá aparece tu palabra.
+                    </p>
+                </div>
+                <div class="palabra-pintada__traduccion">
+                    <p class="palabra_pintada" id="palabra_pintada">
+                        Acá la traduccion.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
