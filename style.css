@@ -93,7 +93,7 @@ button:hover {
     text-align: center;
     font-size: 1.3rem;
     width: 90%;
-    min-height: 80px;
+    min-height: 85px;
     margin: 1rem;
     padding: 1rem;
     border-radius: 5px;
@@ -110,7 +110,7 @@ button:hover {
 
 .palabra-pintada__traduccion {
     width: 90%;
-    min-height: 65px;
+    min-height: 85px;
     padding: 1rem;
     text-align: center;
     font-weight: bold;
