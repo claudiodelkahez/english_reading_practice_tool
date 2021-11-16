@@ -1,25 +1,35 @@
-function changeFontSize(type) {
-
-    let ids = '#textarea';
-
-    ids.forEach(id => {
-        let el = document.querySelector(id);
-
-        let fontSize = window.getComputedStyle(el, null).getPropertyPriorityValue("font-size;")
+/* <-- FONT SIZE CONTROLS --> */
 
 
-        fontSize = parseFloat(fontSize);
-        if (type === "increase") {
-            el.style.fontSize = (fontSize + 5) + "px";
+var textarea = document.querySelector('.textarea');
+var increaseBtn = document.querySelector('.boton__aumentar');
+var decreaseBtn = document.querySelector('.boton__disminuir');
 
-        } else {
-            el.style.fontSize = (fontSize - 5) + "px";
-        }
-    });
-}
+
+var textSize = 20;
+
+
+//aumentar 
+
+increaseBtn.addEventListener('click', () => {
+    textSize = textSize + 1;
+    textarea.style.fontSize = textSize + 'px';
+});
+
+//disminuir 
+
+decreaseBtn.addEventListener('click', () => {
+    textSize = textSize - 1;
+    textarea.style.fontSize = textSize + 'px';
+});
+
+/* <-- FONT SIZE CONTROLS --> */
+
+
 
 
 /* SELECTED TEXT */
+
 const output = document.querySelector("#palabra_pintada");
 
 
