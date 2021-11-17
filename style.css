@@ -41,7 +41,6 @@ html {
 }
 
 body {
-    margin: -40px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -254,10 +253,7 @@ ul .word i {
     color: #999;
     cursor: pointer;
 }
-.skiptranslate {
-    display: none;
-    
-}
+
 /* <-- MEDIA QUERIES --> */
 
 @media screen and (max-width: 500px) {
