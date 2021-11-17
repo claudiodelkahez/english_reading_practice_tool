@@ -1,62 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ERPT</title>
+        <!-- Style sheet -->
         <link rel="stylesheet" href="./style.css" />
+        <!-- Google fonts -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
             rel="stylesheet"
+        />
+
+        <!-- CDN Link for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
     </head>
     <body>
-        <header><h1>English reading practice tool</h1></header>
+        <!-- HEADER -->
+        <header>
+            <h1>English reading practice tool</h1>
+        </header>
+        <!-- HEADER -->
+
         <main>
             <!-- COLUMNA PRINCIPAL -->
-
             <section class="columna-principal">
                 <div class="boton_contenedor">
-                    <button
-                        class="boton__aumentar"
-                    >
-                        A+
-                    </button>
-                    <button
-                        class="boton__disminuir"
-                    >
-                        A-
-                    </button>
-                    <button class="boton__disminuir">O</button>
+                    <button class="boton__aumentar">A+</button>
+                    <button class="boton__disminuir">A-</button>
+                    <button class="boton__disminuir">C</button>
                 </div>
+                <p class="descripcion_herramienta">
+                    Aumentar fuente | Disminuír fuente | Color de fuente .
+                </p>
 
-                <textarea 
+                <textarea
                     class="textarea"
                     placeholder="Pegá aca el texto que vas a leer..."
                     id="textarea"
                     spellcheck="false"
                 ></textarea>
+                <p class="descripcion_herramienta">
+                    Seleccioná con tú mouse el contenido que queres reforzar.
+                </p>
             </section>
+            <!-- COLUMNA PRINCIPAL -->
 
             <!-- COLUMNA LATERAL -->
             <section class="columna-lateral">
                 <div class="contenedor-palabra-pintada">
                     <h3>Traduccion:</h3>
-                    <p class="palabra_pintada" id="palabra_pintada">
-                        Acá aparece tu palabra.
-                    </p>
+                    <p class="palabra_pintada" id="palabra_pintada"></p>
                 </div>
-                <div class="palabra-pintada__traduccion">
-                    <h3>Pronunciacion:</h3>
-                    <p ">
-                    </p>
-                </div>
-            </section>
 
+                <!-- DICCIONARIO -->
+                <div class="wrapper">
+                    <header>English Dictionary</header>
+                    <div class="search">
+                        <input
+                            type="text"
+                            placeholder="Search a word"
+                            required
+                        />
+                        <i class="fas fa-search"></i>
+                        <span class="material-icons">close</span>
+                    </div>
+                    <ul>
+                        <li class="word">
+                            <div class="details">
+                                <p>happy</p>
+                                <span>adjective /'hapi/</span>
+                            </div>
+                            <i class="fas fa-volume-up"></i>
+                        </li>
+                        <div class="content">
+                            <li class="meaning">
+                                <div class="details">
+                                    <p>Meaning</p>
+                                    <span
+                                        >feeling or showing pleasure or
+                                        contentment</span
+                                    >
+                                </div>
+                            </li>
+                            <li class="synonyms">
+                                <div class="details">
+                                    <p>Synonyms</p>
+                                    <div class="list"></div>
+                                    <span>glad,</span>
+                                    <span>contented,</span>
+                                    <span>delighted,</span>
+                                    <span>cheerful,</span>
+                                    <span>joyfull,</span>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <!-- DICCIONARIO -->
+            </section>
+            <!-- COLUMNA LATERAL -->
         </main>
+        <!-- JAVASCRIPT -->
         <script src="./main.js"></script>
+        <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+        <div id="google_translate_element"></div>
+
+        <!-- JAVASCRIPT -->
     </body>
 </html>

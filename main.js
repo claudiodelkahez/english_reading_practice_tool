@@ -36,3 +36,11 @@ const output = document.querySelector("#palabra_pintada");
 document.addEventListener("mouseup", () => {
     output.textContent = `${window.getSelection().toString()}`
 });
+
+
+/// Translate
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+
