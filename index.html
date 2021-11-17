@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ERPT</title>
+        <title>English reading practice tool</title>
         <!-- Style sheet -->
         <link rel="stylesheet" href="./style.css" />
         <!-- Google fonts -->
@@ -29,7 +29,19 @@
     <body>
         <!-- HEADER -->
         <header>
-            <h1>English reading practice tool</h1>
+            <div class="tema">
+                <p class="tema_leyenda">select the color theme</p>
+
+                <span class="color_fondo1"></span>
+                <span class="color_fondo2"></span>
+                <span class="color_fondo3"></span>
+                <span class="color_fondo4"></span>
+            </div>
+
+            <h1>English reading practice handy tool</h1>
+            <p class="subtitulo_principal">
+                A practice reading web-app with a english dictionary aside.
+            </p>
         </header>
         <!-- HEADER -->
 
@@ -76,11 +88,15 @@
                         <i class="fas fa-search"></i>
                         <span class="material-icons">close</span>
                     </div>
+                    <p class="info-text">
+                        Type a word and press enter to get meaning, example,
+                        pronunciation, and synonyms of that typed word.
+                    </p>
                     <ul>
                         <li class="word">
                             <div class="details">
-                                <p>happy</p>
-                                <span>adjective /'hapi/</span>
+                                <p>_</p>
+                                <span></span>
                             </div>
                             <i class="fas fa-volume-up"></i>
                         </li>
@@ -88,21 +104,20 @@
                             <li class="meaning">
                                 <div class="details">
                                     <p>Meaning</p>
-                                    <span
-                                        >feeling or showing pleasure or
-                                        contentment</span
-                                    >
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="example">
+                                <div class="details">
+                                    <p>Example</p>
+                                    <span></span>
                                 </div>
                             </li>
                             <li class="synonyms">
                                 <div class="details">
                                     <p>Synonyms</p>
                                     <div class="list"></div>
-                                    <span>glad,</span>
-                                    <span>contented,</span>
-                                    <span>delighted,</span>
-                                    <span>cheerful,</span>
-                                    <span>joyfull,</span>
+                                   
                                 </div>
                             </li>
                         </div>
@@ -112,13 +127,11 @@
             </section>
             <!-- COLUMNA LATERAL -->
         </main>
+        <footer>
+            <p class="footer">Hecho con 🔥 por <a href="http://claudiodelkahez.com/" target="_blank" >@claudiodelkahez</a></p>
+        </footer>
         <!-- JAVASCRIPT -->
         <script src="./main.js"></script>
-        <script
-            type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></script>
-        <div id="google_translate_element"></div>
 
         <!-- JAVASCRIPT -->
     </body>
